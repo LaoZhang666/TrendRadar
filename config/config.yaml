@@ -41,7 +41,7 @@ notification:
   #   - 只想在工作日白天接收推送（如 09:00-18:00）
   #   - 希望在晚上固定时间收到汇总（如 20:00-22:00）
   push_window:
-    enabled: false  # 是否启用推送时间窗口控制，默认关闭
+    enabled: true  # 是否启用推送时间窗口控制，默认关闭
     # 注意：GitHub Actions 执行时间不稳定，时间范围建议至少留足 2 小时
     # 如果想要精准的定时推送，建议使用 Docker 部署在个人服务器上
     time_range:
@@ -57,8 +57,8 @@ notification:
     feishu_url: "" # 飞书机器人的 webhook URL
     dingtalk_url: "" # 钉钉机器人的 webhook URL
     wework_url: "" # 企业微信机器人的 webhook URL
-    telegram_bot_token: "8184315518:AAGaULL1PrCuDkDPruHI8y0PrFz-LjfBKKo" # Telegram Bot Token
-    telegram_chat_id: "646892036" # Telegram Chat ID
+    telegram_bot_token: "" # Telegram Bot Token
+    telegram_chat_id: "" # Telegram Chat ID
     email_from: "" # 发件人邮箱地址
     email_password: "" # 发件人邮箱密码或授权码
     email_to: "" # 收件人邮箱地址，多个收件人用逗号分隔
